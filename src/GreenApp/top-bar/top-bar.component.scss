@@ -1,0 +1,30 @@
+@import '../config/sass/config.scss';
+
+:host {
+  height: 30px;
+  text-align: right;
+  padding-top: 4px;
+  color: #888;
+  //@include bg('logo.png');
+  div {
+    display: inline-block;
+    margin-left: 34px;
+    .flag-image {
+      width: 22px;
+      height: 16px;
+      vertical-align: middle;
+    }
+    span.glyphicon {
+        font-size: 11px;
+        margin-left: 4px;
+    }
+  }
+  a {
+    text-decoration: none;
+    .top-image {
+      width: 15px;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+  }
+}

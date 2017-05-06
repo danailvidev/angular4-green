@@ -1,3 +1,17 @@
-<p>
-  top-bar works!
-</p>
+<a *ngFor="let icon of greenConfigService.socialIcons"
+    [href]="icon.link" 
+    [title]="icon.title">
+<img 
+    class="top-image" 
+    [src]="icon.imageFile" 
+    [alt]="icon.alt">
+</a>
+
+<div *ngIf="greenConfigService.showLanguageSelector">
+  <img class="flag-image" src="assets/images/bulgaria-flag.png" alt="Flag">
+  <span>BG</span><span class="glyphicon glyphicon-chevron-down"></span>
+</div>
+
+<div *ngIf="greenConfigService.showUserControls">
+  <span>SIGN IN</span>
+</div>
