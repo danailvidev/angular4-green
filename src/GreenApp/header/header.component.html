@@ -1,5 +1,14 @@
-<div class="title-bar">
-  <img src="assets/logo.png" height="40" alt="">
+<div *screenBelowLarge class="title-bar-small">
+  <span class="glyphicon glyphicon-menu-hamburger"></span>
+  <div class="small-image-holder">
+    <img src="assets/images/logo.png" alt="Logo" class="small-image">
+    <span class="logo-text">Green Planet</span>
+  </div>
+  <span class="glyphicon glyphicon-option-vertical"></span>
+</div>
+
+<div *screenLarge class="title-bar">
+  <img src="assets/images/logo.png" height="40" alt="">
   <span class="logo-text">Green Planet</span>
   <div class="menu-area">
     <dv-top-bar></dv-top-bar>

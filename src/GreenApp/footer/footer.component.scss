@@ -1,0 +1,9 @@
+@import '../config/sass/config.scss';
+
+:host{
+    min-height: 18px;
+    background: $primary-color;
+    .copyright {
+        padding-left: 20px;
+    }
+}

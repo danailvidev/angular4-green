@@ -1,3 +1,4 @@
+@import '../config/sass/config.scss';
 :host {
   display: flex;
 }
@@ -6,23 +7,45 @@
   flex-grow: 1;
   display: flex;
   min-height: 80px;
-
   .logo-text {
-    font-size: 36px;
-    color: #7a985e;
-    align-self: center;
     padding-left: 10px;
+    font-size: 36px;
   }
-
-  .menu-area{
+  .menu-area {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding-right: 20px;
   }
-
   img {
     align-self: center;
     padding-left: 20px;
   }
+}
+
+.title-bar-small {
+  flex-grow: 1;
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  .logo-text {
+    font-size: 27px;
+  }
+  .small-image-holder {
+    flex-grow: 1;
+    .small-image {
+      width: 50px;
+    }
+  }
+  span {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+}
+
+.logo-text {
+  color: $primary-color;
+  align-self: center;
+  vertical-align: middle;
 }
