@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { GreenConfigService, GreenConfigSettings } from '../GreenApp/services/green-config.service'
+import { GreenConfigService, GreenConfigSettings } from '../GreenApp/services/green-config.service';
+import { MenuService } from '../GreenApp/services/menu.service';
+import { initialMenuItems } from './app.menu';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,9 @@ import { GreenConfigService, GreenConfigSettings } from '../GreenApp/services/gr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private greenConfigService: GreenConfigService) {
+  constructor(
+    private greenConfigService: GreenConfigService,
+    private menuService: MenuService) {
     let config: GreenConfigSettings = {
       socialIcons: [
         { imageFile: 'assets/images/social-icons/facebook.png', alt: 'Facebook', link: 'http://www.facebook.com' },
@@ -22,6 +26,8 @@ export class AppComponent {
       showStatusBarBreakpoint: 800
     };
 
-    greenConfigService.configure(config)
+    greenConfigService.configure(config);
+
+    menuService.items = initialMenuItems;
   }
 }
