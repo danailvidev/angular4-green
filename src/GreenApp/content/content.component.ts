@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../services/menu.service';
-
+import { ScreenService } from '../services/screen.service';
 @Component({
   selector: 'dv-content',
   templateUrl: './content.component.html',
@@ -8,9 +8,12 @@ import { MenuService } from '../services/menu.service';
 })
 export class ContentComponent implements OnInit {
   private menuService: MenuService;
-  constructor(menuService: MenuService) {
+  private screenService: ScreenService;
+  constructor(
+    menuService: MenuService,
+    screenService: ScreenService) {
     this.menuService = menuService;
-    console.log(menuService.isVertical)
+    this.screenService = screenService;
   }
 
   ngOnInit() {

@@ -1,5 +1,6 @@
 <div *screenBelowLarge class="title-bar-small">
-  <span class="glyphicon glyphicon-menu-hamburger"></span>
+  <span class="glyphicon glyphicon-menu-hamburger"
+  (click)="menuService.toggleLeftSideMenu()"></span>
   <div class="small-image-holder">
     <img src="assets/images/logo.png" alt="Logo" class="small-image">
     <span class="logo-text">Green Planet</span>

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MenuItem } from '../../services/menu.service';
+import { MenuService, MenuItem } from '../../services/menu.service';
 
 @Component({
   selector: 'dv-menu-item',
@@ -8,8 +8,10 @@ import { MenuItem } from '../../services/menu.service';
 })
 export class MenuItemComponent implements OnInit {
   @Input() item = <MenuItem>null;
-
-  constructor() { }
+  private menuService: MenuService;
+  constructor(menuService: MenuService) {
+    this.menuService = menuService;
+  }
 
   ngOnInit() {
   }
