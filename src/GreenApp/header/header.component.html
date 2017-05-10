@@ -12,6 +12,6 @@
   <span class="logo-text">Green Planet</span>
   <div class="menu-area">
     <dv-top-bar></dv-top-bar>
-    <dv-menu></dv-menu>
+    <dv-menu *ngIf="!menuService.isVertical"></dv-menu>
   </div>
 </div>

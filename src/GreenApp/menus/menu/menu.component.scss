@@ -1,8 +1,19 @@
+@import '../../config/sass/config.scss';
+
 :host {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   flex-grow: 1;
+}
+
+:host(.vertical-menu) {
+  display: inline-block;
+  width: 200px;
+  padding-left: 4px;
+  flex-grow: 0;
+  background-color: $menu-background-color;
+  overflow: auto;
 }
 
 ul {

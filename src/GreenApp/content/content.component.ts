@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'dv-content',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
-  constructor() { }
+  private menuService: MenuService;
+  constructor(menuService: MenuService) {
+    this.menuService = menuService;
+    console.log(menuService.isVertical)
+  }
 
   ngOnInit() {
   }

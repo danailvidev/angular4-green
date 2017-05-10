@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {GreenConfigService} from '../services/green-config.service';
+import { GreenConfigService } from '../services/green-config.service';
 
 @Component({
   selector: 'dv-top-bar',

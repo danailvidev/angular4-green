@@ -1,3 +1,5 @@
+@import '../../config/sass/config.scss';
+
 :host {
   display: inline-block;
   position: relative;
@@ -18,6 +20,14 @@
     width: auto;
 }
 
+:host(.vertical-menu) {
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: $text-primary-color;
+}
+
 span {
   pointer-events: none;
 }
@@ -31,9 +41,18 @@ span {
 .menu-item{
     padding: 10px 10px 10px 0;
 }
+.menu-item.vertical-menu {
+    padding: 6px 6px 6px 0;
+}
 .menu-item:hover {
     background-color: #f0fff0;
 }
+.menu-item.vertical-menu:hover {
+    background-color: green;
+}
 .router-link-active {
     background-color: #f0fff0;
+}
+.router-link-active.vertical-menu {
+    background-color: green;
 }
