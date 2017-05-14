@@ -1,5 +1,4 @@
 @import '../../config/sass/config.scss';
-
 :host {
   display: inline-block;
   position: relative;
@@ -16,16 +15,20 @@
 }
 
 :host:not(.parent-is-popup) {
-    margin-left: 16px;
-    width: auto;
+  margin-left: 16px;
+  width: auto;
 }
 
 :host(.vertical-menu) {
-    display: block;
-    margin-left: 0;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    color: $text-primary-color;
+  display: block;
+  margin-left: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: $text-primary-color;
+}
+
+:host(.vertical-menu.in-popup) {
+  padding-left: 16px;
 }
 
 span {
@@ -38,21 +41,33 @@ span {
   margin-right: 4px;
   margin-left: 8px;
 }
-.menu-item{
-    padding: 10px 10px 10px 0;
+
+.glyphicon-menu-left, .glyphicon-menu-right, .glyphicon-menu-down {
+    float: right;
+} 
+
+
+
+.menu-item {
+  padding: 10px 10px 10px 0;
 }
+
 .menu-item.vertical-menu {
-    padding: 6px 6px 6px 0;
+  padding: 6px 6px 6px 0;
 }
+
 .menu-item:hover {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
+
 .menu-item.vertical-menu:hover {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
+
 .router-link-active {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
+
 .router-link-active.vertical-menu {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }

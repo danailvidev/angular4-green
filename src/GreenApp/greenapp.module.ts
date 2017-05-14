@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MenuComponent } from './menus/menu/menu.component';
 import { MenuItemComponent } from './menus/menu-item/menu-item.component';
-
+import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
 //services
 import { GreenConfigService } from './services/green-config.service';
 import { ScreenService } from './services/screen.service';
@@ -35,7 +35,8 @@ import { ScreenBelowLarge } from './directives/screen-below-large.directive';
     ScreenLarge,
     ScreenBelowLarge,
     MenuComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    PopupMenuComponent
   ],
   providers: [
     GreenConfigService,
