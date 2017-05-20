@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/images/sign-in-background.jpg');
+    background-position:  center center;
+    background-size: cover;
+}
+
+.register-form {
+    min-width: 300px;
+  background-color: rgba(0,0,0, .54);
+  padding: 20px;
+  color: white;
+}
+.form-control {
+    color: white;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+

@@ -4,7 +4,7 @@ export let initialMenuItems: Array<MenuItem> = [
     {
         text: 'Dashboard',
         icon: 'glyphicon-dashboard',
-        route: 'dashboard',
+        route: '/authenticated/dashboard',
         submenu: null
     },
     {
@@ -20,19 +20,19 @@ export let initialMenuItems: Array<MenuItem> = [
                     {
                         text: 'Bulgaria',
                         icon: 'glyphicon-flag',
-                        route: 'country-detail/Bulgaria',
+                        route: '/authenticated/country-detail/Bulgaria',
                         submenu: null
                     },
                     {
                         text: 'Japan',
                         icon: 'glyphicon-flag',
-                        route: 'country-detail/Japan',
+                        route: '/authenticated/country-detail/Japan',
                         submenu: null
                     },
                     {
                         text: 'China',
                         icon: 'glyphicon-flag',
-                        route: 'country-detail/China',
+                        route: '/authenticated/country-detail/China',
                         submenu: null
                     }
                 ],
@@ -40,19 +40,19 @@ export let initialMenuItems: Array<MenuItem> = [
             {
                 text: 'Top 3',
                 icon: 'glyphicon-flag',
-                route: 'country-list/3',
+                route: '/authenticated/country-list/3',
                 submenu: null
             },
             {
                 text: 'Top 10',
                 icon: 'glyphicon-flag',
-                route: 'country-list/10',
+                route: '/authenticated/country-list/10',
                 submenu: null
             },
             {
                 text: 'All',
                 icon: 'glyphicon-flag',
-                route: 'country-list/0',
+                route: '/authenticated/country-list/0',
                 submenu: null
             }
         ],
@@ -65,13 +65,13 @@ export let initialMenuItems: Array<MenuItem> = [
             {
                 text: 'County List',
                 icon: 'glyphicon-th-list',
-                route: 'country-maint',
+                route: '/authenticated/country-maint',
                 submenu: null
             },
             {
                 text: 'Settings',
                 icon: 'glyphicon-cog',
-                route: 'settings',
+                route: '/authenticated/settings',
                 submenu: null
             }
         ]

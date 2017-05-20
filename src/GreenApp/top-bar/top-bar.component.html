@@ -13,5 +13,6 @@
 </div>
 
 <div *ngIf="greenConfigService.showUserControls">
-  <span>SIGN IN</span>
+  <span>{{userName}}</span>
+  <span class="sign-out" (click)="signOut()">SIGN OUT</span>
 </div>

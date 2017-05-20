@@ -1,0 +1,36 @@
+//@import '../../config/sass/config.scss';
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../../assets/images/sign-in-background.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.sign-in-form {
+  min-width: 300px;
+  background-color: rgba(0,0,0, .54);
+  padding: 20px;
+  color: white;
+}
+
+.form-control {
+    color: white;
+}
+
+a {
+  line-height: 32px;
+  color: white;
+}
+
+button {
+  float: right;
+}
+
+.message {
+  float: right;
+}
