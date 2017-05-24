@@ -1,6 +1,7 @@
 @import '../config/sass/config.scss';
 
 :host{
+    flex: none;
     min-height: 18px;
     background: $primary-color;
     .copyright {

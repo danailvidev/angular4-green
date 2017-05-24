@@ -8,7 +8,7 @@ import { UserApi } from "GreenApp/users/user-api";
   styleUrls: ['./top-bar.component.scss']
 })
 export class TopBarComponent implements OnInit {
-  userName = null;
+  userName: string;
 
   constructor(private greenConfigService: GreenConfigService, private userApi: UserApi) { }
 
