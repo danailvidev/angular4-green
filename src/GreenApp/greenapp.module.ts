@@ -21,6 +21,7 @@ import { PanelComponent } from './panels/panel/panel.component';
 import { GreenConfigService } from './services/green-config.service';
 import { ScreenService } from './services/screen.service';
 import { MenuService } from './services/menu.service';
+import { QuotesService } from './services/quotes.service';
 
 //directives 
 import { ScreenLarge } from './directives/screen-large.directive';
@@ -54,7 +55,8 @@ import { ScreenBelowLarge } from './directives/screen-below-large.directive';
   providers: [
     GreenConfigService,
     ScreenService,
-    MenuService
+    MenuService,
+    QuotesService
   ],
   exports: [
     GreenBodyComponent,
