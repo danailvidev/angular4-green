@@ -7,7 +7,7 @@ export class QuotesService {
     baseUrl: String
 
     createAuthorizationHeader(headers: Headers) {
-        headers.append('X-Mashape-Key', 'WuNfkhsfTymshFD8d8ZlGokSvZU4p16wNR8jsnVkTAsV1vnHnn');
+        headers.append('X-Mashape-Key', '<key>');
         headers.append('Accept', 'application/json');
     }
 
